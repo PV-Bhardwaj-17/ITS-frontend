@@ -1,0 +1,65 @@
+.dashboardContainer {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.heading {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.error {
+    color: red;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #777;
+}
+
+.chartRow {
+    display: flex;
+    justify-content: space-around; /* Space between the charts */
+    align-items: center; /* Vertically align the charts */
+    gap: 20px; /* Add spacing between the charts */
+    flex-wrap: wrap; /* Wrap to the next row if the screen is too small */
+    margin-bottom: 40px; /* Add some space above the charts */
+    margin-left: 10px; /* Add some space above the charts */
+}
+
+.chartCard {
+    background-color: #f9f9f9; /* Optional: Add a background color */
+    border: 1px solid #ddd; /* Optional: Add a border */
+    border-radius: 8px; /* Add border radius */
+    padding: 10px; /* Add padding inside the card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    display: flex;
+    justify-content: center; /* Center the chart horizontally */
+    align-items: center; /* Center the chart vertically */
+}
