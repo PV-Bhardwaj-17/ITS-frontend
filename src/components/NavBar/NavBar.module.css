@@ -1,0 +1,82 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navLeft {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navRight {
+    display: flex;
+    align-items: center;
+    position: relative; /* Required for dropdown positioning */
+}
+
+.profileToggle {
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.profileDropdown {
+    position: absolute;
+    top: 40px; /* Ensures dropdown starts slightly below email */
+    right: 0;
+    background-color: white;
+    color: #333;
+    padding: 10px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 10;
+    width: 250px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.profileDropdown table {
+    width: 100%;
+    border-spacing: 0;
+    margin-bottom: 10px;
+}
+
+.profileDropdown table td {
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.logoutButton {
+    margin-top: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logoutButton:hover {
+    background-color: #e60000;
+}
+
+.arrowIcon {
+    margin-left: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.profileToggle:hover .arrowIcon {
+    transform: scale(1.1);
+}

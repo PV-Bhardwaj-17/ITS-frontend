@@ -30,12 +30,11 @@ const Login = () => {
 
             if (response.ok) {
                 const data = await response.json();
-                const { email } = data;
-
+                
                 if (formData.role === "Admin") {
                     navigate("/adminUser");
                 } else if (formData.role === "Faculty") {
-                    navigate("/facultyUser");
+                    navigate("/facultyUser", { state: data });
                 } else if (formData.role === "Student") {
                     navigate("/studentUser");
                 } else {

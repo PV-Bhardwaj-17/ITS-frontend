@@ -10,6 +10,7 @@ const FacultyRegistration = () => {
         email: "",
         college: "",
         password: "",
+        internshipDomain: ""
     });
 
     const [errors, setErrors] = useState({});
@@ -118,6 +119,19 @@ const FacultyRegistration = () => {
                         required
                     />
                     {errors.email && <p className={styles.error}>{errors.email}</p>}
+                </div>
+                <div className={styles.formGroup}>
+                    <label htmlFor="internshipDomain">Internship Domain</label>
+                    <select
+                        id="internshipDomain"
+                        name="internshipDomain"
+                        value={formData.internshipDomain}
+                        onChange={handleChange}
+                    >
+                        <option value="Web">Web</option>
+                        <option value="AI/ML">AI/ML</option>
+                        <option value="Cyber Security">Cyber Security</option>
+                    </select>
                 </div>
                 <div className={styles.formGroup}>
                     <label htmlFor="college">College</label>
